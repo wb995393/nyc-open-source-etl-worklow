@@ -9,8 +9,7 @@ My challenge results reflect open source data downloaded from the specified **31
 - Once the script was complete, I still needed to add a LIMIT clause to the API endpoint in order to specify the maximum records to download. Since NYC Open Data uses Socrata API, the default query of only 1000 records retrieved needs to be updated and I did so by adding a LIMIT of 1000000 to the end of the query. The dataset had far fewer than 1000000 records so i knew this parameter would work.
 - With the API endpoint updated, my script was ready to run and the 'raw.csv' file was properly downloaded into my personal folder.
 # Step 2
-- Now with my raw.csv dataset downloaded, a new column named 'created_date_hour' would need to be made and I did so in the csv using the following formula **=LEFT(A1, LEN(A1) - 10)**. This formula removed the last ten digits of text from every 'created_date' record and left me with a column that only showed the Year/Month/Day/Hour for each record. This process is shown in the screenshots below.
-![image](https://github.com/user-attachments/assets/02f7e007-443d-4a95-92c5-adffa53c44da)
+- Now with my raw.csv dataset downloaded, a new column named 'created_date_hour' would need to be made and I did so in the csv using the following formula **=LEFT(A1, LEN(A1) - 10)**. This formula removed the last ten digits of text from every 'created_date' record and left me with a column that only showed the Year/Month/Day/Hour for each record. This process is shown in the screenshots below.![image](https://github.com/user-attachments/assets/02f7e007-443d-4a95-92c5-adffa53c44da)
 
 ![image](https://github.com/user-attachments/assets/8457b3c7-25fa-46c0-979b-a1fb4698a4f3)
 
