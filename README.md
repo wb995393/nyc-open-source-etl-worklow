@@ -1,6 +1,6 @@
 # Will Buckhout's GIS Team Data Challenge Results
 
-## Hello! I've put together a step by step guide on how I completed the GIS Team Data Challenge using **[NYC Open Data](https://opendata.cityofnewyork.us/)**. 
+## Hello! I've put together a step by step guide on how I completed the GIS Team Data Challenge using **[NYC Open Data](https://opendata.cityofnewyork.us/)**. Thank you for your time and consideration.
 My challenge results reflect the specified **311 Service Requests from 2010 to Present** dataset filters during the one week (7 day) period of **11/29/2024 to 12/05/2024**
 
 # Step 1
@@ -14,7 +14,7 @@ My challenge results reflect the specified **311 Service Requests from 2010 to P
 
 ![image](https://github.com/user-attachments/assets/8d574be5-9ef6-42e3-a1b6-7b6b414e5216)
 
-- Next, the table needed to be quireied in order tO aggregate the data. Using **[DBeaver Database Management/SQL IDE Software](https://dbeaver.io/download/)** I imported the raw data, wrote the following  **[SQL Query](https://github.com/wb995393/gis-team-data-challenge-will-buckhout/blob/main/count_by_complaint_type_by_created_date_hour.sql)** and was able to create a new aggregated table to complete task 2.
+- Next, the table needed to be quireied in order to aggregate the data. Using **[DBeaver Database Management/SQL IDE Software](https://dbeaver.io/download/)** I imported the raw data, wrote the following  **[SQL Query](https://github.com/wb995393/gis-team-data-challenge-will-buckhout/blob/main/count_by_complaint_type_by_created_date_hour.sql)** and was able to create a new aggregated table to complete Task 2.
 # Step 3
 - To complete Task 3, I added my original 'raw.csv' table into ArcPro in order to create a line chart from the dataset.
 - By selecting a line chart, the primary 'Date or Time' input needed to be dependent on the 'created_date_hour' column.
