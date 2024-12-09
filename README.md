@@ -22,7 +22,7 @@ My challenge results reflect the specified **311 Service Requests from 2010 to P
 - However, the 'created_date_hour' would need to be converted back to a 'Date' field type in ArcPro, since my previous conversion in excel had turned it into a 'Text' field. to rectify this I made a custom arcade expression using the Date() funcrtion.
 ![image](https://github.com/user-attachments/assets/fdf052b9-4c1e-4299-8327-7d33a61bbdb8)
 - Now, I could complete the line chart using 1 hour increments and export it to PNG.
-
-
+# Step 4
+-
 
   
