@@ -28,7 +28,9 @@ My challenge results reflect the specified **311 Service Requests from 2010 to P
 - Now, with the correct file type and all records populated, I converted the raw.gbd dataset into a point layer using the 'latitude' and 'longitude' fields.
 - To do so, I right clicked on the raw.gbd file, scrolled to 'Create Points From Table' and clicked 'XY Table To Point'
 ![image](https://github.com/user-attachments/assets/46e01604-e67f-42ae-be2f-4afbb3410b0f)
-- Once the points were geocoded and the point layer was created, I then spatially joined the geocoded points layer to the NTA boundaries feature layer.
-- 
+- Once the points were geocoded and the point layer was created, I then spatially joined the geocoded points layer to the NTA boundaries feature layer and exported the joined layer.
+- To generate the final display for the layer, I used graduated colors dependent on the 'Join_Count' field.
+- Lastly, I created a map template and exported the final results to PNG
+  
 
   
