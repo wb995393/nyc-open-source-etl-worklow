@@ -14,5 +14,5 @@ My challenge results reflect open source data downloaded from the specified **31
 
 ![image](https://github.com/user-attachments/assets/8d574be5-9ef6-42e3-a1b6-7b6b414e5216)
 
-- Next, the table needed to be quireied in order to meet the specifications of Task 2 and aggregate the data. Using **[DBeaver Database Management/SQL IDE Software] (https://dbeaver.io/download/)** I imported the raw data, wrote the following (SQL query) and was able to create a new aggregated table to complete task 2.
+- Next, the table needed to be quireied in order to meet the specifications of Task 2 and aggregate the data. Using **[DBeaver Database Management/SQL IDE Software](https://dbeaver.io/download/)** I imported the raw data, wrote the following (SQL query) and was able to create a new aggregated table to complete task 2.
 
