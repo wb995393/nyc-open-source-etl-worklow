@@ -16,7 +16,7 @@ My challenge results reflect the specified **311 Service Requests from 2010 to P
 
 - Next, the table needed to be quireied in order to meet the specifications of Task 2 and aggregate the data. Using **[DBeaver Database Management/SQL IDE Software](https://dbeaver.io/download/)** I imported the raw data, wrote the following (SQL query) and was able to create a new aggregated table to complete task 2.
 # Step 3
-- To complete Task 3, I added my origininal 'raw.csv' table into ArcPro in order to create a chart from the layer.
+- To complete Task 3, I added my origininal 'raw.csv' table into ArcPro in order to create a line chart from the dataset.
 - By selecting a line chart, the primary 'Date or Time' input needed to be dependent on the 'created_date_hour' column.
 ![image](https://github.com/user-attachments/assets/b74e425a-7db8-4bc1-9385-288ddf37bfc4)
 - However, the 'created_date_hour' would need to be converted back to a 'Date' field type in ArcPro, since my previous conversion in excel had turned it into a 'Text' field. to rectify this I made a custom arcade expression using the Date() funcrtion.
