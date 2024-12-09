@@ -23,14 +23,14 @@ My challenge results reflect the specified **311 Service Requests from 2010 to P
 ![image](https://github.com/user-attachments/assets/fdf052b9-4c1e-4299-8327-7d33a61bbdb8)
 - Now, I could complete the line chart using 1 hour increments and export it to PNG.
 # Step 4
-- I used ArcPro as well for the final task. After downloading the NTA shapefile, I created a GDB to import it into. Next I used a definition query to filter the raw.csv file for 'HEAT/HOT WATER' complaint types only and exported it into the geotabase as a GDB file.
-- Finally, I noticed that there was one record that had a <Null> value for the 'latitude' and 'longitude' fields. It did have a street address, so I was able to search the address in google maps and copy the lat ond long from there.
+- I used ArcPro for the final task as well. After downloading the NTA shapefile, I created a GDB to import it into. Next I used a definition query to filter the raw.csv file for 'HEAT/HOT WATER' complaint types only, then exported it into the geodatabase as a GDB file.
+- Finally, I noticed that there was one record that had a <Null> value for the 'latitude' and 'longitude' fields. It did have a street address, so I was able to search the address in google map, copy the lat/long provided from there and populate the lat/long for the <Null> vallues.
 - Now, with the correct file type and all records populated, I converted the raw.gbd dataset into a point layer using the 'latitude' and 'longitude' fields.
 - To do so, I right clicked on the raw.gbd file, scrolled to 'Create Points From Table' and clicked 'XY Table To Point'
 ![image](https://github.com/user-attachments/assets/46e01604-e67f-42ae-be2f-4afbb3410b0f)
 - Once the points were geocoded and the point layer was created, I then spatially joined the geocoded points layer to the NTA boundaries feature layer and exported the joined layer.
-- To generate the final display for the layer, I used graduated colors dependent on the 'Join_Count' field.
-- Lastly, I created a map template and exported the final results to PNG
+- To generate the final display, I used graduated colors dependent on the 'Join_Count' field.
+- Lastly, I created a map template and exported the final results to PNG.
   
 
   
