@@ -17,7 +17,7 @@
 - Next, the table needed to be quiried in order to aggregate the data. Using **[DBeaver Database Management/SQL IDE Software](https://dbeaver.io/download/)**, I imported the `raw.csv` data, wrote the following  **[SQL Query](https://github.com/wb995393/gis-team-data-challenge-will-buckhout/blob/main/count_by_complaint_type_by_created_date_hour.sql)** and created a **[new aggregated table](https://github.com/wb995393/gis-team-data-challenge-will-buckhout/blob/main/raw_aggregate.csv)** to complete Task 2.
 # Step 3
 - To complete Task 3, I added my original `raw.csv` table into `ArcPro` in order to create a line chart from the dataset.
-- By selecting a line chart, the primary 'Date or Time' input needed to be dependent on the `created_date_hour` column.
+- By selecting a line chart, the primary `Date or Number` input needed to be dependent on the `created_date_hour` column.
 ![image](https://github.com/user-attachments/assets/b74e425a-7db8-4bc1-9385-288ddf37bfc4)
 - However, the `created_date_hour` would need to be converted back to a `Date` field type in `ArcPro`, since my previous conversion in excel had turned it into a `Text` field. To rectify this, I made a custom Arcade expression using the `Date()` function.
 ![image](https://github.com/user-attachments/assets/fdf052b9-4c1e-4299-8327-7d33a61bbdb8)
