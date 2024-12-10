@@ -21,7 +21,7 @@
 ![image](https://github.com/user-attachments/assets/b74e425a-7db8-4bc1-9385-288ddf37bfc4)
 - However, the `created_date_hour` would need to be converted back to a `Date` field type in `ArcPro`, since my previous conversion in excel had turned it into a `Text` field. To rectify this, I made a custom Arcade expression using the `Date()` function.
 ![image](https://github.com/user-attachments/assets/fdf052b9-4c1e-4299-8327-7d33a61bbdb8)
-- Now, I could complete the line chart using 1 hour increments and export it to `.png`.
+- Now, I could complete the **[multi-line plot chart](https://github.com/wb995393/gis-team-data-challenge-will-buckhout/blob/main/service_request_complaints_per_hour_by_complaint_type_Line_Chart.png)** using 1 hour increments and export it to `.png`.
 # Step 4
 - I used `ArcPro` for the final task as well. After downloading the `NTA Shapefile`, I imported it into a new `geodatabase`. Next I used a definition query to filter the `raw.csv` file for `HEAT/HOT WATER` complaint types only, then I exported it into the `geodatabase` as a `.gdb` file.
 - Finally, I noticed that there was one record that had a `<Null>` value for the `latitude` and `longitude` fields. It did have a street address, so I was able to search the address in google maps, copy the lat/long provided from there and populate the lat/long for the `<Null>` values.
