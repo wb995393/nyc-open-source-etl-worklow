@@ -4,12 +4,15 @@
 *My challenge results reflect the specified **311 Service Requests from 2010 to Present** dataset filters during the one week (7 day) period of **11/29/2024 to 12/05/2024**
 
 # Step 1
-- After navigating to the 311 Service Requests from 2010 to Present dataset and filtering for my specific `Created_Date` dates and required `Agency`, the data is ready to be exported and I will need the `API Endpoint URL` to do so. After selecting `.csv` file type, I can copy the auto-generated `API URL` (as shown in the screenshot below). ![image](https://github.com/user-attachments/assets/e8d19438-a628-4ccf-bcf1-f73711ebd189)
+- After navigating to the 311 Service Requests from 2010 to Present dataset and filtering for my specific `Created_Date` dates and required `Agency`, the data is ready to be exported and I will need the `API Endpoint URL` to do so. After selecting `.csv` file type, I can copy the auto-generated `API URL` (as shown in the screenshot below).
+
+![image](https://github.com/user-attachments/assets/e8d19438-a628-4ccf-bcf1-f73711ebd189)
 - In order for me to download the very large dataset quickly and efficiently, I wrote a **[Python Script](https://github.com/wb995393/gis-team-data-challenge-will-buckhout/blob/main/export_311_service_requests_2010topresent.py)** that makes a request using the copied `API Endpoint`, converts the table to a dataframe using `PANDAS` and outputs the requested data as a `.csv` file.
 - Once the script was complete, I still needed to add a `LIMIT` clause to the `API Endpoint` in order to specify the maximum records to download. Since NYC Open Data uses `Socrata API`, the default query of only 1000 records retrieved needs to be updated and I did so by adding a `LIMIT of 1000000` to the end of the query. The dataset had far fewer than `1000000` records so I knew this parameter would work.
 - With the `API Endpoint` updated, my script was ready to run and the **[`raw.csv`](https://github.com/wb995393/gis-team-data-challenge-will-buckhout/blob/main/raw.csv)** file was downloaded into my personal folder.
 # Step 2
 - Now with my `raw.csv` dataset downloaded, a new column named `created_date_hour` would need to be made and I did so in the `.csv` using the following formula **=LEFT(A1, LEN(A1) - 10)**. This formula removed the last ten digits of text from every `created_date` record and left me with a column that only showed the `Year/Month/Day/Hour` for each record. This process is shown in the screenshots below.
+
 ![image](https://github.com/user-attachments/assets/02f7e007-443d-4a95-92c5-adffa53c44da)
 
 ![image](https://github.com/user-attachments/assets/8d574be5-9ef6-42e3-a1b6-7b6b414e5216)
@@ -18,8 +21,10 @@
 # Step 3
 - To complete Task 3, I added my original `raw.csv` table into `ArcPro` in order to create a line chart from the dataset.
 - By selecting a line chart, the primary `Date or Number` input needed to be dependent on the `created_date_hour` column.
+
 ![image](https://github.com/user-attachments/assets/b74e425a-7db8-4bc1-9385-288ddf37bfc4)
 - However, the `created_date_hour` would need to be converted back to a `Date` field type in `ArcPro`, since my previous conversion in excel had turned it into a `Text` field. To rectify this, I made a custom `Arcade` expression using the `Date()` function.
+
 ![image](https://github.com/user-attachments/assets/fdf052b9-4c1e-4299-8327-7d33a61bbdb8)
 - I then completed the **[multi-line plot chart](https://github.com/wb995393/gis-team-data-challenge-will-buckhout/blob/main/service_request_complaints_per_hour_by_complaint_type_Line_Chart.png)** using 1 hour increments and exported it to `.png`.
 # Step 4
