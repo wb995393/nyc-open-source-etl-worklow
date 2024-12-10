@@ -30,7 +30,7 @@
 ![image](https://github.com/user-attachments/assets/46e01604-e67f-42ae-be2f-4afbb3410b0f)
 - Once the points were geocoded and the point layer was created, I then spatially joined the geocoded points layer to the `NTA boundaries` feature layer and exported the joined layer.
 - To generate the final display, I used graduated colors dependent on the `Join_Count` field.
-- Lastly, I created a map template and exported the final **[Choropleth Map](https://github.com/wb995393/gis-team-data-challenge-will-buckhout/blob/main/heat_hotwater_servicerequest_complaints_by_NTA_Choropleth_Map.png)** results to `.png`. All of the layers used to generate the final map are included in this **[`Zipfile`](https://github.com/wb995393/gis-team-data-challenge-will-buckhout/blob/main/gis_team_data_challenge_Feature_Layers.gdb.zip)**
+- Lastly, I created a map template and exported the final **[Choropleth Map](https://github.com/wb995393/gis-team-data-challenge-will-buckhout/blob/main/heat_hotwater_servicerequest_complaints_by_NTA_Choropleth_Map.png)** results to `.png`. All of the layers used to generate the final map are included in this **[`ZIP File`](https://github.com/wb995393/gis-team-data-challenge-will-buckhout/blob/main/gis_team_data_challenge_Feature_Layers.gdb.zip)**
   
 
   
