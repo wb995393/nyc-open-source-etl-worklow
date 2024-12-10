@@ -23,7 +23,7 @@
 ![image](https://github.com/user-attachments/assets/fdf052b9-4c1e-4299-8327-7d33a61bbdb8)
 - Now, I could complete the line chart using 1 hour increments and export it to PNG.
 # Step 4
-- I used ArcPro for the final task as well. After downloading the NTA shapefile, I created a GDB to import it into. Next I used a definition query to filter the raw.csv file for 'HEAT/HOT WATER' complaint types only, then I exported it into the geodatabase as a GDB file.
+- I used ArcPro for the final task as well. After downloading the NTA shapefile, I imported it into a new GDB. Next I used a definition query to filter the raw.csv file for 'HEAT/HOT WATER' complaint types only, then I exported it into the geodatabase as a GDB file.
 - Finally, I noticed that there was one record that had a <Null> value for the 'latitude' and 'longitude' fields. It did have a street address, so I was able to search the address in google maps, copy the lat/long provided from there and populate the lat/long for the <Null> values.
 - Now, with the correct file type and all records populated, I converted the raw.gbd dataset into a point layer using the 'latitude' and 'longitude' fields.
 - To do so, I right clicked on the raw.gbd file, scrolled to 'Create Points From Table' and clicked 'XY Table To Point'
