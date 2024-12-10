@@ -14,7 +14,7 @@
 
 ![image](https://github.com/user-attachments/assets/8d574be5-9ef6-42e3-a1b6-7b6b414e5216)
 
-- Next, the table needed to be quiried in order to aggregate the data. Using **[DBeaver Database Management/SQL IDE Software](https://dbeaver.io/download/)** I imported the raw data, wrote the following  **[SQL Query](https://github.com/wb995393/gis-team-data-challenge-will-buckhout/blob/main/count_by_complaint_type_by_created_date_hour.sql)** and was able to create a **[new aggregated table](https://github.com/wb995393/gis-team-data-challenge-will-buckhout/blob/main/raw_aggregate.csv)** to complete Task 2.
+- Next, the table needed to be quiried in order to aggregate the data. Using **[DBeaver Database Management/SQL IDE Software](https://dbeaver.io/download/)**, I imported the raw data, wrote the following  **[SQL Query](https://github.com/wb995393/gis-team-data-challenge-will-buckhout/blob/main/count_by_complaint_type_by_created_date_hour.sql)** and created a **[new aggregated table](https://github.com/wb995393/gis-team-data-challenge-will-buckhout/blob/main/raw_aggregate.csv)** to complete Task 2.
 # Step 3
 - To complete Task 3, I added my original 'raw.csv' table into ArcPro in order to create a line chart from the dataset.
 - By selecting a line chart, the primary 'Date or Time' input needed to be dependent on the 'created_date_hour' column.
