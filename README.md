@@ -29,7 +29,7 @@
 - I then completed the **[multi-line plot chart](https://github.com/wb995393/gis-team-data-challenge-will-buckhout/blob/main/service_request_complaints_per_hour_by_complaint_type_Line_Chart.png)** using 1 hour increments and exported it to `.png`.
 # Step 4
 - I used `ArcPro` for the final task as well. After downloading the `NTA Shapefile`, I imported it into a new `geodatabase`. Next I used a definition query to filter the `raw.csv` file for `HEAT/HOT WATER` complaint types only, then I exported it into the `geodatabase` as a `.gdb` file.
-- Within the newly exported `raw.gdb' table I noticed that there was one record that had a `<Null>` value for the `latitude` and `longitude` fields. It did have the `incident_address` field populated, so I was able to search the address in google maps, copy the lat/long provided from there and populate the lat/long for the `<Null>` values in the `raw.gdb` table.
+- Within the newly exported `raw.gdb` table I noticed that there was one record that had a `<Null>` value for the `latitude` and `longitude` fields. It did have the `incident_address` field populated, so I was able to search the address in google maps, copy the lat/long provided from there and populate the lat/long for the `<Null>` values in the `raw.gdb` table.
 - Now, with the correct file type and all records populated, I converted the `raw.gdb` dataset into a point layer using the `latitude` and `longitude` fields.
 - To do so, I right clicked on the `raw.gdb` file, scrolled to `Create Points From Table` and clicked `XY Table To Point`
 
