@@ -13,14 +13,12 @@ output_folder = os.path.dirname(output_csv_path)
 if not os.path.exists(output_folder):
     os.makedirs(output_folder)
 try:
-    # Download CSV
+    
     response = requests.get(file_url)
     response.raise_for_status()
 
-    # CSV file into a DataFrame
     csv_data = pd.read_csv(BytesIO(response.content))
-
-    # Save the DataFrame as a CSV file
+    
     csv_data.to_csv(output_csv_path, index=False)
 
     print(f"CSV file downloaded and saved successfully at: {output_csv_path}")
