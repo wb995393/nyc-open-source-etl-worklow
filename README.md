@@ -1,7 +1,7 @@
-# GIS Data Challenge 
+# New York City 311 Data
 
-## Hello! I've put together a step by step guide on how I completed the *GIS Team Data Challenge* using **[NYC Open Data](https://opendata.cityofnewyork.us/)**. Thank you for your time and consideration.
-*My challenge results reflect the specified **311 Service Requests from 2010 to Present** dataset filters during the one week (7 day) period of **11/29/2024 to 12/05/2024**
+## Hello! I've put together a step by step guide on how to extract transform and load **[NYC Open Data](https://opendata.cityofnewyork.us/)** data 
+*This data reflects the one week (7 day) period of **11/29/2024 to 12/05/2024**
 
 # Step 1
 - After navigating to the 311 Service Requests from 2010 to Present dataset and filtering for my specific `Created_Date` dates and required `Agency`, the data was ready to be exported and I needed the `API endpoint URL` to do so. After selecting `.csv` file type, I copied the auto-generated `API URL` (as shown in the screenshot below).
