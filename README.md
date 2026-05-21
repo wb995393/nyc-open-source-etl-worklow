@@ -1,6 +1,6 @@
 # New York City 311 Data
 
-## Hello! I've put together a step by step guide on how to extract transform and load **[NYC Open Data](https://opendata.cityofnewyork.us/)** data 
+## Hello! I've put together a step by step guide on how to extract transform and load **[NYC Open Data](https://opendata.cityofnewyork.us/)** 
 *This data reflects the one week (7 day) period of **11/29/2024 to 12/05/2024**
 
 # Step 1
