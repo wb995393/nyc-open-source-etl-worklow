@@ -26,7 +26,7 @@
 - However, the `created_date_hour` will need to be converted back to a `Date` field type in `ArcPro`, since the previous conversion in excel had turned it into a `Text` field. To rectify this, make a custom `Arcade` expression using the `Date()` function.
 
 ![image](https://github.com/user-attachments/assets/fdf052b9-4c1e-4299-8327-7d33a61bbdb8)
-- Complete the **[multi-line plot chart](https://github.com/wb995393/gis-team-data-challenge-will-buckhout/blob/main/service_request_complaints_per_hour_by_complaint_type_Line_Chart.png)** using 1 hour increments and export it to `.png`.
+- Complete the **[multi-line plot chart](https://github.com/wb995393/gis-team-data-challenge-will-buckhout/blob/main/service_request_complaints_per_hour_by_complaint_type_Line_Chart.png)** using 1 hour increments and export it.
 # Step 4
 - Use `ArcPro` for the final task as well. After downloading the `NTA Shapefile`, import it into a new `geodatabase`. Next, use a definition query to filter the `raw.csv` file for `HEAT/HOT WATER` complaint types only, then export it into the `geodatabase` as a `.gdb` file.
 - Within the newly exported `raw.gdb` table, there will be a record that has a `<Null>` value for the `latitude` and `longitude` fields. Missing data occurances like this do happen from time to time with NYC Open Source Data. The `incident_address` field populated, so you'll need to search the address in google maps, copy the lat/long provided from there and populate the lat/long for the `<Null>` values in the `raw.gdb` table.
@@ -34,7 +34,7 @@
 - To do so, right click on the `raw.gdb` file, scroll to `Create Points From Table` and click `XY Table To Point`
 
 ![image](https://github.com/user-attachments/assets/46e01604-e67f-42ae-be2f-4afbb3410b0f)
-- Once the points were geocoded and the point layer was created, spatially join the geocoded points layer to the `NTA Boundaries` feature layer and export the joined layer.
+- Once the points are geocoded and the point layer is created, spatially join the geocoded points layer to the `NTA Boundaries` feature layer and export the joined layer.
 - To generate the final display, use graduated colors dependent on the `Join_Count` field.
 - Lastly, creat a map template and export the final **[Choropleth Map](https://github.com/wb995393/gis-team-data-challenge-will-buckhout/blob/main/heat_hotwater_servicerequest_complaints_by_NTA_Choropleth_Map.png)** results. All of the layers used to generate the final map are included in this **[`ZIP File`](https://github.com/wb995393/gis-team-data-challenge-will-buckhout/blob/main/gis_team_data_challenge_Feature_Layers.gdb.zip)**
   
