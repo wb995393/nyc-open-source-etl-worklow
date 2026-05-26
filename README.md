@@ -4,7 +4,7 @@
 *This data reflects the one week (7 day) period of **11/29/2024 to 12/05/2024**
 
 # Step 1
-- After navigating to the 311 Service Requests from 2010 to Present dataset and filtering for the specific `Created_Date` dates and required `Agency`, the data is ready to be exported and needs the `API endpoint URL` to do so. After selecting `.csv` file type, copy the auto-generated `API URL` (as shown in the screenshot below).
+- After navigating to the **[311 Service Requests from 2010 to Present](https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2020-to-Present/erm2-nwe9/about_data)** dataset and filtering for the specific `Created_Date` dates and required `Agency`, the data is ready to be exported and needs the `API endpoint URL` to do so. After selecting `.csv` file type, copy the auto-generated `API URL` (as shown in the screenshot below).
 
 ![image](https://github.com/user-attachments/assets/e8d19438-a628-4ccf-bcf1-f73711ebd189)
 - In order to download the very large dataset quickly and efficiently, use this **[Python Script](https://github.com/wb995393/gis-team-data-challenge-will-buckhout/blob/main/export_311_service_requests_2010topresent.py)** that makes a request using the copied `API endpoint`, converts the table to a dataframe using `PANDAS` and outputs the requested data as a `.csv` file.
