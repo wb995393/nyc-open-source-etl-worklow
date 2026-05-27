@@ -11,7 +11,7 @@
 - Once the script is complete, add a `LIMIT` clause to the `API endpoint` in order to specify the maximum records to download. Since NYC Open Data uses `Socrata API`, the default query of only 1000 records retrieved needs to be updated, so add a `LIMIT of 1000000` to the end of the query. The dataset had far fewer than `1000000` records so this parameter should work.
 - With the `API endpoint` updated, the script is ready to run and the **[`raw.csv`](https://github.com/wb995393/gis-team-data-challenge-will-buckhout/blob/main/raw.csv)** file should output to the folder specified in the python script.
 # Step 2
-- Now, with the `raw.csv` dataset downloaded, a new column named `created_date_hour` needs to be made and, so in the `raw.csv` use the following formula **=LEFT(A1, LEN(A1) - 10)**. This formula removes the last ten digits of text from every `created_date` record and leaves you with a column that only shows the `Year/Month/Day/Hour` for each record. This process is shown in the screenshots below.
+- Now, with the `raw.csv` dataset downloaded, a new column named `created_date_hour` needs to be made, so in the `raw.csv` use the following formula **=LEFT(A1, LEN(A1) - 10)**. This formula removes the last ten digits of text from every `created_date` record and leaves you with a column that only shows the `Year/Month/Day/Hour` for each record. This process is shown in the screenshots below.
 
 ![image](https://github.com/user-attachments/assets/02f7e007-443d-4a95-92c5-adffa53c44da)
 
