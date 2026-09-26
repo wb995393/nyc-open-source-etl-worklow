@@ -34,7 +34,7 @@
 - To do so, right click on the `raw.gdb` file, scroll to `Create Points From Table` and click `XY Table To Point`
 
 ![image](https://github.com/user-attachments/assets/46e01604-e67f-42ae-be2f-4afbb3410b0f)
-- Once the points are geocoded and the point layer is created, spatially join the geocoded points layer to the `NTA Boundaries` feature layer and export the joined layer.
+- Once the point layer is created, spatially join the point layer to the `NTA Boundaries` feature layer and export the joined layer.
 - To generate the final display, use graduated colors dependent on the `Join_Count` field.
 - Lastly, creat a map template and export the final **[Choropleth Map](https://github.com/wb995393/gis-team-data-challenge-will-buckhout/blob/main/heat_hotwater_servicerequest_complaints_by_NTA_Choropleth_Map.png)** results. All of the layers used to generate the final map are included in this **[`ZIP File`](https://github.com/wb995393/gis-team-data-challenge-will-buckhout/blob/main/gis_team_data_challenge_Feature_Layers.gdb.zip)**
   
